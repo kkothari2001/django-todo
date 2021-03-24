@@ -140,13 +140,14 @@
       {% for todo in todo_list reversed %}
       <li>
         {{todo.title | title}}
-        <span class="close"
-          ><a
+        <span class="close">
+          <a
             style="text-decoration: none; color: black"
             href="delete/{{todo.id}}"
-            >Delete</a
-          ></span
-        >
+          >
+            Delete
+          </a>
+        </span>
       </li>
       {% endfor %}
     </ul>
